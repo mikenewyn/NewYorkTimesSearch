@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New York Times Search</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="title" class="row">
+            <div><p>New York Times Search</p>
+            </div>
+        </div>
+
+        <div id="userInput" class="row">
+                <div class="card">
+                        <div class="card-header">
+                          Search Parameters
+                        </div>
+                        <div class="card-body">
+                                <form>
+                                        <div class="form-group">
+                                                <label for="searchTerm">Search Term:</label>
+                                                <input type="type" class="form-control" id="searchTerm">
+                                        </div>                          
+                                        <label for="numberRetrieve">Number of Records to Retrieve</label>
+                                            <select class="form-control" id="numberRetrieve">
+                                            <option>1</option>
+                                            <option>5</option>
+                                            <option>10</option>
+                                            <option>15</option>
+                                            <option>20</option>
+                                            </select>              
+                                        <div class="form-group">
+                                          <label for="inputStartYear">Start Year(Optional)</label>
+                                          <input type="text" class="form-control" id="inputStartYear">
+                                        </div>
+                                        <div class="form-group">
+                                                <label for="inputEndYear">End Year(Optional)</label>
+                                                <input type="text" class="form-control" id="inputEndYear">
+                                        </div>
+                                        <button id="subBut" type="submit" class="btn btn-primary">Submit</button> <button id="resBut" type="reset" class="btn btn-primary">Clear Results</button>
+                                </form>
+                        </div>
+                </div>
+        </div>
+        
+        <div id="articles" class="row">
+            <div class="card-header">Top Articles</div>
+            <div id="articleContainer" class="card-body"></div>
+        </div>
+        
+        <div id="footer" class="row">Made with blood, sweat and tears</div>
+    
+    </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="assets/javascript.js"></script>
+</body>
+</html>
